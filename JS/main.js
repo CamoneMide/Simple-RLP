@@ -4,7 +4,7 @@ const header = document.querySelector('#header');
 const izoom1 = document.querySelector('.sz');
 const izoomm = document.querySelectorAll('.sz');
 const izoom = document.querySelectorAll('.szoom');
-
+const arms = document.querySelectorAll('.nav-item');
 
 btnav.addEventListener('click', () =>{
     if(oph.classList.contains('openh')){
@@ -20,6 +20,14 @@ btnav.addEventListener('click', () =>{
 
 document.addEventListener('scroll', () =>{
     header.classList.add("add")
+    btnav.classList.remove("fa-xmark")
+    btnav.classList.add("fa-bars")
+});
+
+arms.forEach(arm => {
+    arm.addEventListener('click', () =>{
+        oph.classList.remove('openh')
+    })
 });
 
 //  izoom.forEach(zoom => {
