@@ -777,12 +777,12 @@ footer{
         margin-top: 40px;
     }
     .sub input{
-        margin-left: 10px;
+        margin-left: 20px;
         padding: 0 !important;
-        min-width: 70%;
+        min-width: 62%;
     }
     .sub button{
-        width: 30%;
+        width: 28%;
         margin: 10px 20px;
     }
 }
